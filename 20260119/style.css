@@ -1,0 +1,55 @@
+/* style.css */
+body {
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+  font-family: "바탕", "Batang", Georgia, serif;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+h1 {
+  color: #002c5f;           /* 갤러리 현대 느낌의 깊은 블루 */
+  font-size: 2.6rem;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+p {
+  margin: 1.4rem 0;
+  font-size: 1.15rem;
+}
+
+.signature {
+  margin-top: 4rem;
+  text-align: right;
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 2;
+}
+
+.signature strong {
+  color: #002c5f;
+  font-weight: bold;
+}
+
+/* 마지막 장난스러운 부분 */
+h1:last-of-type {
+  color: #c41e3a;           /* 선녀바보 포인트 레드 */
+  font-family: "맑은 고딕", sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+div {
+  color: #d32f2f;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  padding: 1.2rem;
+  background: #fff0f0;
+  border-left: 6px solid #c41e3a;
+  border-radius: 6px;
+}

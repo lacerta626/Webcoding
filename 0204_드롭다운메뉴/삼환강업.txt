@@ -1,0 +1,79 @@
+그리드 - W1530
+기본글자 - 16px, #222
+포인트컬러 - #219d7e
+
+
+<!-- 상단영역 -->
+#header - H100, 상단고정, 배경색rgba(255,255,255,0.7), 그리드적용X
+
+
+<!-- 카테고리메뉴 -->
+COMPANY
+	ABOUT SAM HWAN
+	HISTORY
+	LOCATION
+PRODUCT
+	STEEL STRAPPING
+	PET STRAPPING
+	STEAL
+CONTACT US
+	INQUIRY
+FAMILY
+	SAMHWAN VINA
+
+
+<!-- 메인배너영역  -->
+STRAP
+THE WORLD
+TIGHTLY
+
+
+<!-- 메인영역  -->
+BEST PRODUCT
+STEEL STRAPPING
+PET STRAPPING
+SEALS
+
+
+GLOBAL NETWORK
+삼환강업㈜의 제품은 우수한 품질에 근거해 50여개 국가 이상 수출하고 있습니다.
+
+
+SAMHWAN STEEL
+삼환강업과 제품의 관련 된 인증서, 카다로그를 확인하실 수 있습니다.
+
+
+
+SAMHWAN STEEL
+삼환강업과 제품의 관련 된 인증서, 카다로그를 확인하실 수 있습니다.
+
+인증서 확인
+Certification
+제품 카다로그
+Product Catalog
+
+삼환강업 연혁
+22년의 역사와 100년을 향한 회사의 미래
+
+오시는길/연락처
+삼환강업 고객문의 연락처 안내
+
+온라인 문의
+삼환강업 고객문의 연락처 안내
+
+
+
+<!-- FOOTER 영역  -->
+COMPANY
+PRODUCT
+CONTACT US
+FAMILY
+PRIVACY POLICY
+
+
+SAMHWAN STEEL CO., LTD
+Add28-153, Bugokgongdan 4-gil, Songak-eup, Dangjin-si, Chungnam Province, 343-827 Korea
+Tel+82 (0)41-356-2336 /
+Fax+82 (0)41-356-6733 /
+E-mail james@samhwansteel.com, kevin@samhwansteel.com
+

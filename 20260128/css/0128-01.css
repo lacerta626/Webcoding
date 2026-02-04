@@ -1,0 +1,27 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: Noto Sans KR, sans-serif; font-size: 16px; color: #131313 }
+li { list-style: none;}
+a{color: #fff; text-decoration: none;}
+a:hover {color: red;}
+.grid{ width: 1200px; margin: 0 auto;}
+.header{ height:110px; background-color: #353535}
+.logo , .gnb{display: inline-block;line-height: 110px;}
+.logo{padding-top: 25px;}
+.logo img{height: 60px;vertical-align: middle;}/*인라인요소가 이미지와 베이스라인에 배치*/
+.gnb li{display: inline-block; line-height: 110px; margin-right: 40px; font-size: 20px;}
+.main_visual{height:80vh; background: #353535 url(../images/bg_03.jpg ) no-repeat center; font-size: 86px;font-weight: 900; color: rgba(255,255,255,0.7);padding-top: 100px;text-align: center;}
+
+h1{ font-size: 40px;font-weight: 300; color:rgb(38, 14, 109);margin-bottom: 40px;}
+.section_1{padding: 120px 0; }
+.section_1 li{margin-bottom: 30px; width: 300px;height: 150px;}
+.section_1 ul li:nth-child(1){ background-color: rgb(131, 94, 39);padding-top: 40px; border: 1px solid #000;}
+.section_1 ul li:nth-child(2){ background-color: rgb(99, 43, 132); border-right: 10px solid #353535;}
+.section_1 ul li:nth-child(3){ background-color: rgb(24, 136, 72);border-left: 20px solid aqua; padding-left: 20px;}
+.section_1 ul li:nth-child(4){ background-color: rgb(154, 176, 47);text-align: center;border-top: 1px double #000}
+.section_1 ul li:nth-child(5){ background-color: rgb(131, 94, 39);margin: 0 auto 20px;}
+.section_2{padding: 120px 0; background-color: aqua;}
+.image p:first-child img{width: 300px; display: block;}
+.image .icon img{vertical-align: middle;}
+.section_3{padding: 200px 0 100px;}
+
+.footer {padding:30px 0; border-top: 1px solid #eee;}

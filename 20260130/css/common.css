@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+*{margin: 0; padding: 0;box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body{font-family: "Hi Melody";font-size: 16px; color: #232323;}
+li{list-style: none;}
+img{vertical-align: middle}
+a {text-decoration: none;}
+
+.grid{width: 1400px;margin:0 auto}
+header{height: 120px; position: fixed; width: 100%;top:0;left: 0; z-index: 1000;background-color:rgba(255, 255, 255, 1);}/* 포지션 픽스트 화면기준 위치지정, 내용만큼 자리차지 width 100% */
+nav{display: flex;}/* 한줄에 하위요소가 가로배치 */
+/* justify-contents 가로 align-item 세로 */
+.gnb{display: flex;}
+/* 글자 밑에 줄넣고 싶은데 글자수에 따라서 길이가 달라지니까 글자와 같은 길이 하고싶다 width 글자별로 다르게 하고싶다 margin right */
+.gnb li{width: 120px;text-align: center;font-size: 22px;font-weight: 800; line-height: 120px;}
+.gnb a{color: #12b700;transition: color 0.5s ease;}
+.gnb li:hover a{color: rgb(192, 240, 255); }
+.logo{margin-right: 200px;}
+.logo img{height: 80px; padding-top: 25px;}
+/* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); */

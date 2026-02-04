@@ -1,0 +1,18 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body{ font-family: 'Noto Sans KR', sans-serif; font-size: 16px; color: #333; }
+ul,ol,li {list-style: none;}
+.grid{width: 1300px;margin: 0 auto;}
+.box1 {padding: 200px 0; background:#a8f4d7;  text-align: center;}
+.box1 h2{background: url(../images/house01.png) no-repeat left center #174433;height: 200px; padding-left: 60px; margin-bottom: 100px; font-size: 40px; color: #fff;}
+.box1 li{background-color: #174433; color: #fff; padding: 20px; margin-bottom: 50px; line-height: 50px;}
+
+.box2 { padding: 200px 0; background:#f4d7a8;}
+.box2 h2{background: url(../images/house02.png) no-repeat left center #714b1c;height: 200px; padding-left: 60px; margin-bottom: 100px; font-size: 62px; color: #fff; font-weight: 200;}
+/* .box2 li{background-color: #714b1c; color: #fff; padding: 20px; margin-bottom: 50px; line-height: 50px;} */
+.box2 .grid div { font-size:  26px;color: #634310;}
+.box2 ol { list-style-type: decimal; margin-left: 100px;}
+.box2 span { color: #d2691e; font-weight: bold; }
+
+.box3{padding: 200px 0; background:url(../images/bg_05.jpg) no-repeat right bottom fixed #9cf;}
+.box3 .grid { border-left: 1px dashed #fff; padding-left: 30px;}
+.box3 dt { font-size: 20px; font-weight: bold; margin-bottom: 20px;}

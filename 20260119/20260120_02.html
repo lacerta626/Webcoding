@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본웹문서-태그명령어</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Pretendard", sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        span {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 10px;
+            background-color: #959595;
+            color: #000000;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            color: #000000;
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);  /* 항상 2열 */
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .box .title h1 {
+            color: #d33b3b;
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+
+        span:hover {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+      
+        .card.square {
+            border-radius: 12px;
+            border: 1px solid #150909;
+        }
+  
+        .card.round {
+            border-radius: 36px;
+            border: 3px solid #d33b3b;
+            background: linear-gradient(135deg, #ffffff 0%, #fff9f9 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>크루가 하는 일</h1>
+    <div class = "span">
+        <span>테크</span>
+        <span>서비스비즈</span>
+        <span>스태프</span>
+    </div>
+    <div class="box">
+        <div class="card square">
+            <h1>1. Client</h1>
+            <p><strong>Android, iOS, Windows, MacOS 등의 다양한 종류의 클라이언트를 개발합니다. 모바일 및 PC 기반으로 카카오톡, 다음앱, 카카오TV 등 국내 최고 수준의
+                    서비스를 제공</strong>함으로써 사용자에게 최상의 모바일 경험을 제공합니다. 이를 통해 기본적인 UI 제공에 대한 능력을 키울 수 있으며 동시에 메시지, 음악, 영상 등의
+                다채로운 서비스 기능들을 제공하기 위한 각 도메인에 따른 전문적인 지식과 성장을 경험할 수 있습니다.</p>
+        
+        <div class="hash">
+            <p>#클라이언트
+                #Android
+                #iOS
+                #Windows
+                #MacOS</p>
+        </div>
+        </div>
+        <!-- 2. 둥근 버전 (같은 내용) -->
+        <div class="card round">
+            <div class="title">
+                <h1>1. Client</h1>
+                <p><strong>Android, iOS, Windows, MacOS</strong> 등의 다양한 종류의 클라이언트를 개발합니다. 모바일 및 PC 기반으로 카카오톡, 다음앱, 카카오TV 등 국내 최고 수준의 서비스를 제공함으로써 사용자에게 최상의 모바일 경험을 제공합니다. 이를 통해 기본적인 UI 제공에 대한 능력을 키울 수 있으며 동시에 메시지, 음악, 영상 등의 다채로운 서비스 기능들을 제공하기 위한 각 도메인에 따른 전문적인 지식과 성장을 경험할 수 있습니다.</p>
+            </div>
+            <div class="hash">
+                <p>#클라이언트 #Android #iOS #Windows #MacOS</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

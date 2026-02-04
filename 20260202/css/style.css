@@ -1,0 +1,99 @@
+/* html */
+
+/* main_visual */
+.main_visual{height: 76vh;background-image: url(../images/visual-bg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;text-align: center;padding-top: 20vh;font-size: 68px;font-weight: 400; color: rgba(255, 255, 255, 0.6);text-shadow: 0 0 20px rgba(255, 203, 188, 0.6);font-family: "Playwrite NZ Basic Guides", cursive;}
+
+/* main */
+h2{margin-bottom: 60px;border-bottom: 1px solid #eaeaea;padding-bottom: 30px;}
+
+#main_s1{padding:120px 0; }
+#main_s1 .inner div:nth-child(1){font-size: 30px; font-weight: 700;padding-bottom: 100px;}
+#main_s1 .inner div:nth-child(2){font-size: 14px;padding-bottom: 40px;}
+#main_s1 .inner div:nth-child(3){font-size: 14px;font-weight: 700;font-family: "페이퍼로지";}
+
+#main_s2{padding-bottom: 120px;text-align: center;}
+
+c
+
+#main_s4 ol{display: flex; justify-content: space-between; color: rgb(41, 219, 255);text-align: center;}
+#main_s4 li:first-child{width: 45%; background: url(../images/brand-area4-2.jpg) no-repeat center;}
+#main_s4 li:last-child{width: 45%;}
+#main_s4 li img{width: 100%;}
+#main_s4 li{position: relative;}
+#main_s4 li span{position: absolute;top:50%; left: 50%;background-color: #ff3b3b;transform: translate(-50%,-50%);}
+
+#main_s5{padding: 120px 0; background-color: #eaeaea;}
+.contents { position: relative}
+.contents img{width: 100%;}
+.title{position: absolute;width: 300px; left:30%;top: 30%;}
+
+#main_s6 {padding:120px 0; }
+#main_s6 ol li{height: 200px;}
+#main_s6 ol li p{width: 60px; height: 60px;background-color: #ff3b3b;}
+#main_s6 ol li:nth-child(1) p{animation: motion3 2s ease infinite forwards;}
+#main_s6 ol li:nth-child(2) p{animation: motion1 2s infinite forwards;}
+#main_s6 ol li:nth-child(3) p{animation: motion4 2s infinite;}
+@keyframes motion1{
+    0% {margin-left: 0;}
+    100% {margin-left: 50%;}
+}
+@keyframes motion2 {
+    0% {width: 60px;}
+    50% {width: 500px;}
+    100% {width: 0;}
+    
+}
+@keyframes motion3 {
+    0%{background-color: aqua;}
+    33%{background-color: aquamarine;}
+    66%{background-color: beige;}
+    100%{background-color: blanchedalmond;}
+}
+@keyframes motion4 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+#main_s6 h3{background-color: #fe0;margin: 80px auto 30px;}
+#main_s6 ul { display: flex; flex-wrap: wrap;}
+#main_s6 ul li{width: 100px; height: 100px;margin-right: 100px; margin-bottom: 80px; border: 1px solid #333;}
+#main_s6 ul li p {width: 100%;height: 100%; background: rgba(255, 123, 0, 0.7);}
+#main_s6 ul li:nth-child(1) p{transform: translate(-50px,-50px);}
+#main_s6 ul li:nth-child(2) p{transform: translateX(30px);}
+#main_s6 ul li:nth-child(3) p{transform: translateY(30px);}
+#main_s6 ul li:nth-child(4) p{transform: scale(1.5);}
+#main_s6 ul li:nth-child(5) p{transform: scaleX(1.2);}
+#main_s6 ul li:nth-child(6) p{transform: scaleY(1.2);}
+#main_s6 ul li:nth-child(7) p{transform: rotate(45deg);}
+#main_s6 ul li:nth-child(8) p{transform: rotate(-45deg);}
+#main_s6 ul li:nth-child(9) p{transform: skew(15deg);}
+#main_s6 ul li:nth-child(10) p{transform: skew(-15deg);}
+#main_s6 ul li:nth-child(11) p { transform: rotate(180deg); }
+
+#main_s6 ul li:nth-child(12) p { 
+    transform-origin: left top; 
+    transform: rotate(45deg); 
+}
+
+#main_s6 ul li:nth-child(13) p { transform: translate(20px, 20px); opacity: 0.5; }
+
+#main_s6 ul li:nth-child(14) p { transform: scaleX(-1); }
+
+#main_s6 ul li:nth-child(15) p { transform: scaleY(-1); }
+
+#main_s6 ul li:nth-child(16) p { transform: rotateY(180deg); }
+
+#main_s6 ul li:nth-child(17) p { transform: rotateX(180deg); }
+
+#main_s6 ul li:nth-child(18) p { transform: perspective(500px) rotateY(45deg); }
+
+#main_s6 ul li:nth-child(19) p { transform: translate(10px, 10px) scale(1.2); }
+
+#main_s6 ul li:nth-child(20) p { transform: rotate(10deg) skewX(10deg) translateX(20px); }
+
+.material-symbols-outlined{vertical-align: middle;}
+
+.icon_search{color:#ff3b3b}
+.icon_menu{color: rgb(21, 103, 103);}
+.icon_person{color: rgb(231, 0, 0);}
+.icon_home{color: rgb(43, 82, 136);}

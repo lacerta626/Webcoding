@@ -1,0 +1,41 @@
+*{margin: 0; padding:0; box-sizing: border-box;}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    background: #1c1c1c;
+    color: #ffffff;
+}
+.wrap {width: 800px; margin: 10px auto;}
+h1{color:#0066ff; font-weight: 1000; margin-bottom: 20px; font-size: 60px; text-align: center; font-family: "페이퍼로지", sans-serif;}
+h1{
+    background: linear-gradient(
+        to right, 
+        #0066ff, /* 시작 색상 (파랑) */
+        #00ccff, /* 중간 색상 (하늘) */
+        #ffffff, /* 중간 색상 (흰색) */
+        #0066ff  /* 마지막 색상 (다시 파랑) */  
+        );
+        background-size: 200% auto;
+        -webkit-background-clip: text; /* 크롬, 사파리 등 필수 */
+    background-clip: text;
+    color: transparent;
+        animation: gradient-move 3s linear infinite;
+}
+@keyframes gradient-move {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+dt{background:#0066ff ; padding: 10px; font-weight: bold; border-radius: 5px;}
+dd{margin: 10px 0 30px 20px; line-height: 1.5;}
+ul{margin:10px 0 10px 20px; list-style-type: square;}
+li::marker{color:#0066ff}
+dt a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+dt a:hover {
+    color: #ffffff;
+    background-color: #004bb5;
+    transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블럭요소의 사이즈와 배경</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 16px;
+            color: #222;
+            background-color: #f4f4f4;
+            
+        }
+        ol { list-style: none;}
+        .section_01{
+             background-color: aqua;  margin: 200px auto; background-image: url(images/bg_03.jpg) ;background-repeat: no-repeat; background-attachment: fixed; background-position: center;
+        }
+        h1{width: 400px;   margin: 0 auto 60px; padding-top: 100px; text-align: center; border-bottom: 2px solid #222;} /* 블럭요소 1번째 상단의 하위블럭에 margin 지정시 하위블럭 상단이 아니라 상위요소의 상단에 처리됨, 패딩으로 상단여백처리하면 된다. */
+ul{ list-style: none; }
+        .grid{
+            width: 1400px; margin: 0 auto 100px; color :aqua; text-align: center; 
+        }
+        .grid li{ width: 500px; height: 500px; border:1px solid #222; background-image: url(images/bg_01.jpg) ;font-size: 30px;}
+        .box_bg_1{ background-repeat: no-repeat; background-position: 50% 70%; }
+        .box_bg_2{ background-repeat: no-repeat; background-size: cover; }/*나머지는 잘려서 안보임*/
+        .box_bg_3{ background-repeat: no-repeat; background-size: contain; }/*이미지가 잘린부분이 보임*/
+        .box_bg_4{ background-repeat: no-repeat; background-position: center; background-size: cover; }
+        /* 배경이미지를 화면에 맞추되 사진 중앙이 보이도록 배치됨*/
+
+        .grid .contents_02{
+ background: url(images/house01.png) no-repeat top center;
+ line-height: 500px
+ 
+ 
+        }
+        .grid .contents_02 img{
+            vertical-align: middle;
+        }
+        .grid .contents_03 {
+    background: url(images/house02.png)  no-repeat center #b71010;
+        }
+        .grid .contents_04{
+            background: url(images/house05.png) no-repeat center;
+        }
+    </style>
+</head>
+<body>
+    <div class="section_01">
+        <div class="grid">
+            <h1>배경색상과 배경이미지</h1>
+            <ol>
+                <li class="box_bg_1">1번</li>
+                <li class="box_bg_2">2번</li>
+                <li class="box_bg_3">3번</li>
+                <li class="box_bg_4">4번</li>
+            </ol>
+        </div>
+    </div>
+   <div class="section_02">
+    <div class="grid">
+        <h1>다양한 배경</h1>
+    <ul class="contents">
+        <li class="contents_01">1번 <img src="images/house01.png" alt="배경이미지"></li>
+        <li class="contents_02">2번<img src="images/house02.png" alt="배경이미지"></li>
+        <li class="contents_03">3번<img src="images/house03.png" alt="배경이미지"></li>
+        <li class="contents_04"><img src="images/house04.png" alt="배경이미지">4번</li>
+    </ul>
+   </div>
+   </div>
+</body>
+</html>

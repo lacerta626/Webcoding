@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 경기천년제목, sans-serif;
+}
+.overview{padding: 100px;}
+.hanhwa{padding: 100px; background-color: #f9f9f9;}
+.title {
+    padding: 20px;
+    color: #f37321;
+    font-size: 40px;
+    margin: auto;
+}
+.overview > p{
+    font-size: 40px;
+    
+    margin-top: 30px;
+}
+
+.slogan {
+    padding: 0 20px 20px 20px;
+    font-size: 50px;
+    line-height: 1.5;
+    font-style: bold;
+    word-spacing: 10px;
+}
+.overview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+.section{
+    margin: 20px;
+}
+.hanhwa .section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.hanhwa .section img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-text > div {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-text p {
+    line-height: 1.6;
+}

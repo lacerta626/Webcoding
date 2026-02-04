@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+/* 구글한글폰트 */
+.gowun-batang-regular {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gowun-batang-bold {
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 구글영어폰트 */
+.playwrite-nz-basic-guides-regular {
+  font-family: "Playwrite NZ Basic Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body{font-family: "Gowun Batang"; font-size: 16px;color: #232323;}
+li { list-style:none}
+img { vertical-align: middle;}
+a{text-decoration: none;color: #232323;}
+
+.inner{width: calc( 100% - 200px ); margin:0 auto}
+
+header{height: 100px;position:fixed;width: 100%;background-color: rgba(255, 255, 255, 0.6);z-index: 100;}
+.gnb{display: flex;justify-content: center;}
+.gnb li {margin: 0 20px; font-size: 22px;font-weight: 700;line-height: 100px;}
+.gnb li a {color: #e3a04f;}
+.gnb li a:hover {color: #532f02;}
+
+.up {position: fixed; right: 100px; bottom: 100px;}
+.up a {display: block ;background-color: #000;color: #fff; width: 80px;height: 80px;border-radius: 40px;text-align: center;line-height: 80px;}

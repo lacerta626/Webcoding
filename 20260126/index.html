@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그정리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*전체문서 여백제거*/
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .box1 {
+            background-color: #cefdb9;
+        }
+
+        .grid {
+            background-color: #bafcf5;
+            width: 1000px;
+            height: 300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 100;
+            font-size: 25px;
+            color: #4e18cb;
+        }
+        h3{font-weight: 100 ;
+        font-style: italic;
+        }/* em 태그 기울임제거 font-style: normal; */
+
+        .box2 ul{padding: 50px;
+        list-style: none;
+        }
+        .box2 li {
+            background-color: #feec66;
+            margin-bottom: 10px;
+            line-height: 100px;
+            height: 100px;
+            text-align: center;
+        }
+        .list_01{width: 100px;}
+        .list_02{width: 200px; padding: 50px;}
+        .list_03{width: 300px; padding: 50px; box-sizing: border-box;}
+        .list_04{width: 400px;}
+        .list_05{width: 500px;}
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="grid">
+            <h3>웹문서를 작성하기 위한 코딩언어</h3>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+        </div>
+    </div>
+    <div class="box2">
+        <ul>
+            <li class ="list_01">1번</li>
+            <li class ="list_02">2번</li>
+            <li class ="list_03">3번</li>
+            <li class ="list_04">4번</li>
+            <li class ="list_05">5번</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
