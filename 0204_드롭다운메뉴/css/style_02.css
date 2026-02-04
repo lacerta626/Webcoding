@@ -1,0 +1,27 @@
+body{font-family: KerisKedyuche;font-weight: 500;}
+.inner{width: 1132px;margin: 0 auto;}
+
+header{height: 120px;background-color: }
+header .inner{position: relative;display: flex;justify-content: space-between;}
+.quick{position: absolute;right: 0;top:0; background-color: #00428e;padding: 7px 60px;border-radius: 0 0 30px 30px;color: #fff;font-size: 1rem;transition: 0.8s ease;}
+.quick:hover{background-color: #fff;color: #00428e;}
+
+/* 메뉴 */
+.gnb{display: flex;}
+.gnb>li{position: relative;font-size: 1.3rem;margin:0 20px;;}
+.gnb>li:hover::after{content:"★";color: #00428e;}
+.gnb>li>a{display: inline-block;height: 120px;padding-top: 50px}
+/* undermenu */
+.sub_m{display: none;position: absolute;left: -30px;top: 120px;width: 170px;line-height: 1.7;padding:1.5rem;font-size: 1.1rem;letter-spacing: -1px;background-color: #fff;}
+.gnb>li:hover .sub_m{display: block;z-index: 1;}
+.gnb a:hover{color: #00428e;}
+/* undermenu */
+.logo{padding-top: 40px;}
+.search{line-height: 120px;}
+
+.visual{position: relative;}
+.title{position: absolute;left: 50%;top: 50%;color: #fff;transform: translate(-50%,-50%);font-size: 2.5rem;font-family:Ria ;opacity: 0;animation: fade 2s forwards;}
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+};

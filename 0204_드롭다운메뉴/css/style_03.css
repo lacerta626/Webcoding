@@ -1,0 +1,27 @@
+body{font-family: SokchoSeaDotum;font-size: 16px;}
+.inner{width: 1530px;margin: 0 auto;}
+
+header{height: 100px;position: fixed;left:0;top: 0;width: 100%;background: rgba(255,255,255,0.7);z-index: 10;}
+nav{position: relative;display: flex;justify-content: center;}
+.logo{position: absolute;left: 80px;top: 30px;}
+/* gnb menu */
+.gnb{display: flex;}
+.gnb>li{position: relative;margin: 0 20px;font-size: 1.2rem; font-weight:100;padding-top: 35px;height: 100px;}
+.gnb>li:hover{border-bottom: 3px solid #219d7e;}
+
+/* sub menu */
+.sub{display: none;position: absolute;left: 0;top: 100px;line-height: 1.8;width: 200px;padding-top: 20px;}
+.gnb>li:hover .sub{display: block;}
+.sub a{color: #fff;}
+.sub a:hover{color: #219d7e;}
+
+.visual{position: relative;}
+.visual img{width: 100%;}
+.over{position: absolute;left: calc((100% - 1530px) / 2); top: 50%; color: #fff; transform: translateY(-50%);font-size: 4rem;}
+/* .over{position: absolute;left: 50%;top: 50%;color: #fff;transform: translate(-50%,-50%);font-size:4rem;letter-spacing: 2px;animation: fade 0.8s forwards;opacity: 0;} */
+
+
+@keyframes fade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

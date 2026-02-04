@@ -1,0 +1,33 @@
+body{font-family: YeogiOttaeJalnanGothic; font-size: 16px;color: #222;}
+.inner{width: 1500px;margin: 0 auto;}
+
+header{height: 120px;width: 100%;position: fixed;left: 0;top: 0;}
+nav{display: flex; justify-content: space-between; }
+.logo{padding-top: 18px;}
+.logo img{height: 86px;}
+.icon{padding-top: 40px;display: flex;}
+.search{margin-right: 30px;cursor: pointer;}
+.menu{cursor: pointer;}
+.menu p {width: 40px; height: 3px;background-color: #222;margin-bottom: 10px;transition: 0.8s;}
+.menu:hover p:nth-child(2){width: 20px;margin-left: 20px;}
+/* gnb category menu */
+.gnb { display: flex;}
+.gnb>li{margin: 0 45px;position: relative;height: 120px;padding-top: 40px;font-size: 1.2rem;}
+/* sub 하위메뉴 */
+.sub{display: none;position: absolute;left: 0;top: 120px;width: 150px;}
+.gnb>li:hover .sub{display: block;}
+.sub a {font-size: 1.2rem;}
+.gnb a{color: #fff;}
+.main_visual img{width: 100%;}
+
+/* 반응형웹 태블릿 브레이크 포인트 그리드 1500 */
+@media screen and (max-width:1500px) {
+    .inner{width: 92%;}
+    .gnb{display: none;}
+}
+
+/* 반응형웹 모바일 브레이크 포인트 700 */
+@media screen and (max-width:700px) {
+    .inner{width: 96%;}
+    .logo img{height: 40px;}
+}

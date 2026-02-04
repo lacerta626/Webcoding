@@ -23,8 +23,8 @@ FAMILY
 
 
 <!-- 메인배너영역  -->
-STRAP
-THE WORLD
+STRAP<br>
+THE WORLD<br>
 TIGHTLY
 
 

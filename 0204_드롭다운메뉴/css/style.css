@@ -1,0 +1,54 @@
+/* 폴인 - 드롭다운 폴인.html*/
+.header01{position: fixed;left: 0;top: 0;width: 100%;height:151px;}
+.top1{height: 48px; background: rgb(0,131,117);color: #fff;text-align: center;line-height: 48px;}
+.top2{height: 37px;background:rgb(242,242,242);font-size: 0.8rem;text-align: right;line-height: 37px;}
+.top3{height: 65px;}
+.top3 .inner_1132{display: flex;justify-content: space-between;}
+.nav_l {display: flex;}
+.logo{width: 200px;padding-top:13px}
+.logo img{height: 42px;}
+/* 카테고리메뉴 */
+.gnb{display: flex;gap:40px;font-size: 1.2rem; font-weight: 700;line-height: 65px;}
+.sub_menu{display: none;text-align: center;}
+.sub_menu>li {line-height: 2;font-size: 1.2rem;}
+.gnb>li:hover .sub_menu{display: block;}
+.gnb>li:hover {border-bottom: 3px solid rgb(0,131,117);}
+
+.nav_r {display: flex; line-height: 65px;}
+.nav_r p{margin-left: 30px;}
+.log a{border:1px solid #222;padding:8px 32px;border-radius: 100px;}
+.log a:hover{background-color:  #222;color:#fff}
+
+/* 메인비주얼 */
+.mv01{margin-top: 151px;}
+.mv01 img{width: 100%;}
+
+/* 반응형웹 태블릿 브레이크 포인트 (1132px) */
+@media screen and (max-width: 1132px) {
+    .inner_1132 { 
+        width: calc(100% - 120px); /* cal -> calc 수정 */
+    }
+    .gnb { 
+        display: none; 
+    } 
+} /* 중괄호 닫기 누락 수정 */
+
+/* 반응형웹 모바일 브레이크 포인트 (760px) */
+@media screen and (max-width: 760px) {
+    .inner_1132 { 
+        width: calc(100% - 40px); /* cal -> calc 수정 */
+    }
+    .log { 
+        display: none; /* '로그인/회원가입' 버튼만 숨김 */
+    }
+    
+    /* 아이콘들이 잘 보일 수 있도록 우측 영역 정렬 유지 */
+    .nav_r {
+        display: flex;
+        align-items: center; /* 아이콘들이 세로 중앙에 오도록 */
+    }
+    
+    .nav_r p img {
+        height: 24px; /* 모바일에서 아이콘 크기 적절히 조절 */
+    }
+}

@@ -1,0 +1,7 @@
+body{font-family: KerisKeduLine;}
+.inner{width: 1132px;margin: 0 auto;}
+
+header{height: 120px;background-color: bisque;}
+header .inner{position: relative;}
+.quick{position: absolute;right: 0;top:0; background-color: #00428e;padding: 12px 80px;border-radius: 0 0 30px 30px;color: #fff;font-size: 1.2rem;transition: 0.8s ease;}
+.quick:hover{background-color: #fff;color: #00428e;}

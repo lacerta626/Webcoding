@@ -1,0 +1,28 @@
+/* 폴인 - 드롭다운_폴인.html */
+.inner_1132 { width: 1132px; margin: 0 auto;}
+
+.header01 { position: fixed; left: 0; top: 0; width: 100%; height: 151px; }
+.top1{ height: 48px; background: rgb(0, 131, 117); color: #fff; text-align: center; line-height: 48px;}
+.top2{ height: 38px;  background: rgb(242, 242, 242); padding-top: 12px; font-size: 0.8rem; text-align: right;}
+
+
+.top3{ height: 65px;}
+.top3 .inner_1132 {display: flex; justify-content: space-between;}
+.nav_l { display: flex }
+.logo { width: 200px; padding-top: 13px;}
+.logo img { height: 42px;}
+/* 카테고리메뉴 */
+.gnb {display:flex; font-size: 1.4rem;}
+.gnb>li {margin-right: 30px; font-weight: 600; line-height: 65px;}
+.sub_menu {display: none;}
+.sub_menu>li {line-height: 1.6; font-size: 1.2rem;}
+.gnb>li:hover .sub_menu {display: block;}
+.gnb>li:hover {border-bottom: 2px solid rgb(0, 131, 117);} /* 최하위요소에 라인 */
+
+.nav_r { display: flex; line-height: 65px;}
+.nav_r p{margin-left: 30px;  }
+.log a{border-radius: 100px; border: 1px solid#222; padding: 8px 32px;}
+.log a:hover { background-color: #222; color: #fff;}
+
+.mv01 {margin-top: 151px;}
+.mv01 img {width: 100%;}
