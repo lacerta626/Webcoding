@@ -1,0 +1,106 @@
+index.html
+css/common.css - 기본코딩, 헤더, 푸터(공통레이아웃)
+css/style.css
+ 
+브레이크포인트 (반응형디바이스 기준점)
+1380px
+1024px
+760px
+그리드 - 92%
+포인트컬러 - #a5b7d8
+기본문서속성 - 맑은 고딕, 16px, #fff, 배경 #a5b7d8
+header영역 - 상단고정, H150px
+카테고리메뉴 - 마우스오버시 라인, 하위메뉴 animation
+
+
+AIRWAY MASK
+	BASIC & ADVANCE
+	KIDS
+DAILY MASK
+	AIRWAY A
+	KIDS A
+	BREEZE
+	INNER
+STYLE MASK
+	STYLE
+	SOFT FIT
+	STYLE FIT
+MASK ACC
+	STRAP
+	CASE
+CARE ITEM
+	HAND WASH
+	SANITIZER
+	SANITIZER MINI
+	ETIQUETTE SPRAY
+COSMETICS
+	FACIAL MIST
+	CLEANSING FOAM
+	DUAL MASK SHEET
+
+
+
+ETIQA
+COMFORT MASK STRAP
+당신에게 딱 맞춘<br>
+마스크 스트랩
+
+에티카 컴포트 마스크 스트랩은<br>
+길이 조절장치와 내장된 마그네틱으로<br>
+남녀노소 모두 편안하고 위생적으로 착용 가능합니다.
+
+
+ETIQA AIRWAY
+ROUNDBASIC MASK A KIDS
+소중한 우리 아이의
+첫번째 마스크
+
+에티카 에어웨이 라운드베이직 마스크 에이키즈는
+편안한 호흡은 물론, 안정성이 입증된 마스크로
+우리아이의 숨을 지켜줍니다.
+
+
+ETIQA
+BUBBLE HAND WASH
+풍성한 버블로
+깨끗한 핸드케어
+
+코에티카 버블 핸드 워시는 식물유래 세정성분이 함유된
+부드럽고 풍성한 거품으로 오염물질은 말끔하게 씻어내주고,
+건조함 없이 촉촉한 마무리감을 선사합니다.
+
+
+ETIQA
+FRESH HAND SANITIZER GEL
+작지만 강력한
+손 위생 케어
+
+에티카 프레쉬 핸드 손소댁제 겔은
+강력한 살균효과 뿐만 아니라,
+포켓에 쏙 들어가는 미니멀한 사이즈로
+언제 어디서든 간편하게 쳥결함을 유지할 수 있습니다.
+
+
+ETIQA SMART
+FACTORY
+MEET ETIQA
+
+1600평 규모 최실 제조 시스템,
+글로벌 기준 테스트 장비 구축,
+그리고 철저한 품질 관리로
+오염 없는 청정 마스크를 선사합니다.
+
+
+ETIQA AIRWAY
+ROUND BASIC MASK A
+나의 첫 번째
+'스타일' 마스크
+
+이제 마스크도 나의 스타일에 딱 맞춤.
+편안한 숨을 선사할 뿐 아니라, 잔조로운 마스크에서 해방되어
+오늘의 /스타일/과 당신에게 잘 어울리는 '컬러'로
+나를 표현해보세요.
+
+
+
+Copyright © 2019 Filt Corporation All rights reserved.
