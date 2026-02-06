@@ -1,0 +1,99 @@
+header{height: 120px;width: 100%;position: fixed;left: 0;top: 0;z-index: 99;background-color: rgba(255,255,255,0.6);text-align: center;line-height: 120px;font-size: 2rem;}
+.main_visual video {width: 100%;}
+
+.inner{width: 1400px;margin: 0 auto;}
+h2{font-size: 2rem;font-weight: 900;text-align: center;margin:50px auto 40px;padding-top: 50px;}
+
+.main>section{padding: 100px 0;}
+.s1{text-align: center;font-size: 1.2rem;line-height: 1.8;}
+
+.s1 .content div{margin-bottom: 20px;}
+.s1 p img{width: 100%;}
+.s2 .content{display: flex;}
+.left{width: 70%;}
+.left h3{margin-bottom: 50px;}
+.s2_text{margin: 30px auto 100px;}
+.right{width: 30%;}
+.right img{width: 100%;}
+.btn {width: 200px;height: 50px;border: 1px solid #222;text-align: center;border-radius: 30px;line-height: 50px;background:#222;}
+.btn a {display: block;color: #fff;}
+.btn:hover {background: #450074;}
+.s3{background-color: antiquewhite;}
+.s3 ul{display: flex; justify-content: space-between;}
+.s3 li{width: 30.5%;border-radius: 50px;overflow: hidden;margin-bottom: 30px;}
+.s3 li img{width: 100%;transform: scale(1.2);transition: 0.8s;}
+.s3 li:hover img{transform: scale(1);}
+.s4{margin-bottom: 100px;}
+.s4 ul{display: flex;justify-content: space-between;}
+.s4 li img{background: #00b09b; border-radius: 50%;padding: 100px;transition: 0.8s ease;background-size: 400% 400%;}
+.s4 li:hover img{background: linear-gradient(-45deg, #00b09b, #96c93d, #4facfe, #00b09b);animation: bg_motion 3s ease infinite;background-size: 400% 400%;}
+@keyframes bg_motion {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.s5{text-align: center;}
+.s5 li{display: inline-block;margin: 10px;border: 1px solid #222;padding: 10px 20px;}
+.view p{width: 300px;height: 100px;margin: 20px auto;background: #88ffdb;}
+.view p:nth-child(1){background: #ffb488;}
+.view p:nth-child(2){background: #ff61c2;}
+
+footer{background-color: #555;color: #fff;font-size: 0.95rem;font-weight: 200;padding: 45px 0;}
+footer li{display: inline-block;margin-right: 20px;}
+
+/* Tablet / Mobile Menu */
+.m_header{display: none;position: fixed;height: 80px;width: 100%;border-bottom: 1px solid #ddd;left: 0;top: 0;z-index: 100;overflow: hidden;background-color: #fff;}
+/* position:relative 와 부딪힘 */
+.m_logo{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+/* .m_logo img{height: 60%;} */
+.m_logo img{transform: scale(0.5);}
+.m_btn{position: absolute;right:3%;top: 32%;cursor: pointer;}
+.m_btn p {width: 32px;height: 2px;background: #222;margin-bottom: 10px;}
+.m_menu{display: none;position: fixed;left:0;top: 0; width: 100%;z-index: 100;;height: 100vh;background-color: #88ffdb;padding: 30px;}
+/* Tablet / Mobile Menu */
+
+
+
+
+/* ************************************ */
+/* responsive Tablet 1400 */
+@media screen and (max-width:1399px) {
+    header{display: none;}
+    .m_header{display: block;height: 80px;}
+    .main_visual{display: none;}
+    .inner { width: calc(100% - 120px); } /* grid 70~80% */
+
+    .s2 .content{display: flex;justify-content: space-between;}
+    .left{width: 56%;text-align: center;}
+    .left h3{margin-bottom: 50px;}
+    .s2_text{display: none;}
+    .right{width: 40%;}
+    .btn {margin:60px auto;}
+    /* .right img{width: 100%;}
+    .btn a {display: block;color: #fff;}
+    .btn:hover {background: #450074;} */
+    .s4 ul{flex-wrap: wrap;}
+    .s4 li {width: 50%;text-align: center;margin-bottom: 30px;}
+}
+
+
+
+
+/* ************************************ */
+/* responsive Mobile 760 */
+@media screen and (max-width:760px) {
+    .inner { width: calc(100% - 40px); } /* grid 12~24 */
+    .m_header{height: 60px;}
+    .m_logo{position: absolute;left: -70px;top: 50%;transform: translateY(-50%);}
+    .s1 .content div{padding: 0 10%}
+    .s2 .content{display: block;}
+    .left{width: 100%;}
+    .right{width: 100%;}
+    .s3 ul{display: flex; justify-content: space-between;flex-wrap: wrap;}
+    .s3 li{width: 100%; margin-bottom: 20px;}
+    .s3 li img{width: 100%;transform: scale(1.2);transition: 0.8s;}
+    .s3 li:hover img{transform: scale(1);}
+    .s4 li {width: 100%;text-align: center;margin-bottom: 30px;}
+    .s4 li {padding: 10x;}
+    footer{padding: 30px 0;text-align: center;font-size: 0.75rem;}
+}

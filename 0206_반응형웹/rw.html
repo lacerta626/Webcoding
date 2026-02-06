@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>PC화면 헤드영역</header>
+    <div class="main_visual">
+        <video src="source/main_2.mp4" autoplay muted loop></video>
+    </div>
+    <main>
+        <section class="s1">
+            <div class="inner">
+                <h2>글자와 그림</h2>
+                <div class="content">
+                    <div>
+                        지난 20년간 오직 더 나은 미래와 건강한 환경을 위해 고민해 왔습니다.<br>
+                        지속 가능하고 풍요로운 인류의 삶을 만들어 나아가고자 합니다.
+                    </div>
+                    <p><img src="source/bureal_bg.jpg" alt="반응형"></p>
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="inner">
+                <h2>다단배열 - 2단</h2>
+                <div class="content">
+                    <div class="left">
+                        <h3>세계 최고의 기술력</h3>
+                        <p>Invisible world,<br>
+                            Picogram technology!</p>
+                        <p class="s2_text">피코그램은 최고의 연구 인력과 첨단 연구시설을 기반으로 20여년 동안<br>
+                            필터 및 신소재 기술 개발에 매진해 왔습니다. 최고의 기술력으로<br>
+                            생활환경가전 · 첨단소재 & 부품 · 바이오 & 헬스케어 분야를 선도해 나아가겠습니다.</p>
+                        <p class="btn"><a href="#">연구소 소개 바로가기</a></p>
+                    </div>
+                    <div class="right"><img src="source/s3.jpg" alt="반응형"></div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="inner">
+                <h2>다단배열 - 3단</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#"><img src="source/s1_bn_01.jpg" alt="반응형"></a></li>
+                        <li><a href="#"><img src="source/s1_bn_02.jpg" alt="반응형"></a></li>
+                        <li><a href="#"><img src="source/s1_bn_03.jpg" alt="반응형"></a></li>
+                    </ul>
+                </div>
+        </section>
+        <section class="s4">
+            <div class="inner">
+                <h2>다단배열 - 4단</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#"><img src="source/icon1.png" alt="반응형"></a></li>
+                        <li><a href="#"><img src="source/icon2.png" alt="반응형"></a></li>
+                        <li><a href="#"><img src="source/icon3.png" alt="반응형"></a></li>
+                        <li><a href="#"><img src="source/icon4.png" alt="반응형"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="inner">
+                <h2>제이쿼리 명령어</h2>
+                <div class="content">
+                    <ul>
+                        <li>show()</li>
+                        <li>hide()</li>
+                        <li>toggle()</li>
+                        <li>fadeIN()</li>
+                        <li>fadeOut()</li>
+                        <li>fadeToggle()</li>
+                        <li>slideDown()</li>
+                        <li>slideUp()</li>
+                        <li>slideToggle()</li>
+                    </ul>
+                    <div class="view">
+                        <p>show/hide</p>
+                        <p>fade</p>
+                        <p>slide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 자바스크립트 famework 들이 0이 기본이라서 eq(1)은 두번째다-->
+        <script>
+            $('.s5 li:nth-child(1)').click(function () {
+                $('.view p:nth-child(1)').show();
+            });
+            $('.s5 li').eq(1).click(function () {
+                $('.view p').eq(0).hide();
+            });
+            $('.s5 li:nth-child(3)').click(function () {
+                $('.view p:nth-child(1)').toggle();
+            });
+            $('.s5 li:nth-child(4)').click(function () {
+                $('.view p:nth-child(2)').fadeIn();
+            });
+            $('.s5 li:nth-child(5)').click(function () {
+                $('.view p:nth-child(2)').fadeOut();
+            });
+            $('.s5 li').eq(5).click(function () {
+                $('.view p').eq(1).fadeToggle();
+            });
+            $('.s5 li').eq(6).click(function () {
+                $('.view p').eq(2).slideDown();
+            });
+            $('.s5 li').eq(7).click(function () {
+                $('.view p').eq(2).slideUp();
+            });
+            $('.s5 li').eq(8).click(function () {
+                $('.view p').eq(2).slideToggle();
+            });
+        </script>
+    </main>
+    <footer>
+        <div class="inner">
+            <ul>
+                <li>대표 : 최석림</li>
+                <li>사업자등록번호 : 109-81-76863</li>
+                <li>개인정보관리책임자 : 최석림</li>
+                <li>문의 : <a href="mailto:sales@picogram.co.kr">sales@picogram.co.kr</a></li>
+                <li>주소 : 21310 인천광역시 부평구 부평북로 118 (청천동) (주)피코그램</li>
+                <li>전화 : 032-678-5114</li>
+                <li>팩스 : 070-4369-3677</li>
+            </ul>
+            <p>Copyright ⓒ PICOGRAM CO.,LTD. All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- Tablet / Mobile Menu -->
+    <div class="m_header">
+        <div class="m_logo"><a href="index.html"><img src="source/logo.jpg" alt="로고"></a></div>
+        <div class="m_btn">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+    <div class="m_menu">
+        <div class="m_gnb">
+            <ul>
+                <li><a href="#">피코그램</a></li>
+                <li><a href="#">연구개발</a></li>
+                <li><a href="#">제품</a></li>
+                <li><a href="#">투자정보</a></li>
+                <li><a href="#">뉴스룸</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul>
+        </div>
+        <div class="m_icon">
+            <ul>
+                <li><a href="#"><img src="source/icon1.png" alt="아이콘"></a></li>
+                <li><a href="#"><img src="source/icon2.png" alt="아이콘"></a></li>
+                <li><a href="#"><img src="source/icon3.png" alt="아이콘"></a></li>
+                <li><a href="#"><img src="source/icon4.png" alt="아이콘"></a></li>
+                <li><a href="#"><img src="source/icon5.png" alt="아이콘"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Tablet / Mobile Menu end -->
+</body>
+
+</html>
