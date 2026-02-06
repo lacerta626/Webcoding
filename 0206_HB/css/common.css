@@ -46,16 +46,69 @@ footer ul{display: flex;}
 footer li{padding:0 20px}
 footer p{padding: 0 20px;}
 
-/* responsive menu */
-.m_header{}
-.m_menu{}
-
-/* responsive Tablet 1400 */
-@media screen and (max-width:1399px){
-    header{display: none;}
+/* --- Tablet / Mobile Menu 기본 설정 (PC에선 숨김) --- */
+.m_header {display: none;position: fixed;top: 0;left: 0;width: 100%;height: 80px;background-color: #fff;z-index: 1000;border-bottom: 1px solid #ddd;padding: 0 20px;
 }
+.m_header img { height: 40px; margin-top: 20px; }
+.m_btn {position: absolute;right: 20px;top: 50%;transform: translateY(-50%);cursor: pointer;}
+.m_btn p {width: 30px;height: 2px;background: #222;margin: 6px 0;}
+.m_menu {display: none;position: fixed;top: 80px; left: 0;width: 100%;height: calc(100vh - 80px);background: #fff;z-index: 999;}
+.m_menu ul { padding: 40px; }
+.m_menu li { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.m_menu a { font-size: 1.5rem; font-weight: 700; display: block; }
 
-/* responsive Mobile 760 */
-@media screen and (max-width:759px){
+/* --- Media Queries (특정 해상도에서 나타나기) --- */
+@media screen and (max-width: 1399px) {
+    header { display: none; }
+    .m_header { display: flex; align-items: center; justify-content: space-between; }
+    .main_visual { margin-top: 80px; } 
+    .inner { width: calc(100% - 120px); }
+    .over span { font-size: 3rem; } 
+    .title { font-size: 2.5rem; }
+    .s1 > p { font-size: 1.5rem; }
+}
+@media screen and (max-width: 760px) {
+    /* 공통 이너 여백 조정 */
+    .inner { width: calc(100% - 40px); }
+
+    /* 메인 비주얼 글자 크기 대폭 축소 */
+    .over h1 { font-size: 1.2rem; line-height: 1.4; }
+    .over span { font-size: 1.8rem; display: block; margin-top: 10px; }
+
+    /* 섹션 제목 및 설명 축소 */
+    h2 { font-size: 1.5rem; margin-bottom: 20px; }
+    .s1 > p { font-size: 1rem; margin-bottom: 40px; }
+
+    /* s1 이미지 2열 -> 1열 변경 */
+    .s1_image { display: block; } /* flex를 해제하여 세로로 쌓임 */
+    .s1_image div { width: 100%; margin-bottom: 30px; }
+    .s1_image img { width: 100%; } /* 95%에서 100%로 꽉 채움 */
+
+    /* s2(PRODUCTS) 영역 축소 */
+    .s2_visual { margin-bottom: 100px; }
+    .title { font-size: 1.8rem; margin-bottom: 20px; }
+    .s2_over p { font-size: 0.9rem; line-height: 1.5; }
+    .btn { margin-top: 40px; }
+    .btn a { padding: 15px 30px; font-size: 1rem; }
+
+    /* s3(NEWS) 영역 1열 변경 */
+    .s3 { display: block; }
+    .left { width: 100%; margin-bottom: 40px; }
+    .right { width: 100%; }
     
+    /* 뉴스 리스트 내부 글자 크기 */
+    .s3 li { padding: 20px 0; font-size: 0.85rem; }
+    .s3 li div:nth-child(1) { width: 25%; text-align: left; }
+    .s3 li div:nth-child(2) { width: 75%; }
+    .s3 li div:nth-child(3) { width: 100%; text-align: left; margin-top: 5px; opacity: 0.6; }
+
+    /* s3 하단 4단 이미지 -> 1열 또는 2열 변경 */
+    .s3_image { flex-wrap: wrap; }
+    .s3_image li { width: 100%; margin-bottom: 15px; } /* 1열로 보기 */
+    .s3_image img { width: 100%; }
+
+    /* 푸터 텍스트 축소 */
+    footer { font-size: 0.8rem; }
+    footer ul { display: block; }
+    footer li { padding: 5px 0; }
 }
