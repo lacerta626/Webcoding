@@ -1,0 +1,61 @@
+@import url(font.css);
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body{font-family: 'Aggravo', sans-serif; font-size: 16px; color: #333; line-height: 1.6;}
+a{text-decoration: none; color: inherit;}
+ul, ol{list-style: none;}
+img, input{vertical-align: middle;}
+.inner{width: 1520px; margin: 0 auto;}
+h2{color: #0e9447}
+header{height: 120px;position: fixed;left: 0;top: 0;width: 100%;line-height: 120px;background-color: rgba(255, 255, 255, 0.8);z-index: 99;}
+header .inner{display: flex;justify-content: space-between;}
+.gnb{display: flex; gap: 100px;font-size: 1.5rem;}
+
+.main_visual{width: 100%;margin-top: 120px;position: relative;margin-bottom: 200px;}
+.main_visual img{width: 100%;display: block;}
+.over{position: absolute;left: 50%;top:50%;width: 100%;transform: translate(-50%,-50%);z-index: 2;color: #fff;text-align: center;}
+.over span{font-size: 5rem;}
+
+.s1>p{font-size: 2rem;line-height: 1.2;font-weight: 700;margin-bottom: 100px;}
+.s1_image{display: flex;overflow: hidden;}
+.s1_image img{border-radius: 40px;width: 95%;}
+.s1_image span{font-weight: 700;}
+
+.s2_visual{width: 100%;margin-top: 120px;position: relative;margin-bottom: 200px;}
+.s2_visual img{width: 100%;}
+.s2_visual .inner{position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);height: 100%;}
+.s2_over{position: absolute;left: 50%;top:30%;width: 100%;transform: translate(-50%,-50%);z-index: 2;}
+.title{font-size: 3rem;margin-bottom: 50px;}
+.btn{margin-top: 100px;}
+.btn a{border: 1px solid #222;padding:30px 40px}
+
+.s3{display: flex;}
+.left{width: 30%;}
+.right{width: 70%;}
+.s3 li{display: flex;border-top:1px solid #222;padding:40px 0}
+.s3 li div:nth-child(1){width: 15%;text-align: center;}
+.s3 li div:nth-child(2){width: 70%;}
+.s3 li div:nth-child(3){width: 15%;text-align: center;}
+.s3_image{display: flex;}
+.s3_image img{width: 95%;border-radius: 50px;}
+
+footer{background-color: #222;color: rgba(255, 255, 255, 0.6);padding-bottom: 40px;}
+footer ul{display: flex;}
+.footer_top{border-bottom: 1px solid rgba(255, 255, 255, 0.6); color: #fff;padding: 20px 0;}
+.footer_bottom{padding: 40px 0; line-height: 2;}
+footer li{padding:0 20px}
+footer p{padding: 0 20px;}
+
+/* responsive menu */
+.m_header{}
+.m_menu{}
+
+/* responsive Tablet 1400 */
+@media screen and (max-width:1399px){
+    header{display: none;}
+}
+
+/* responsive Mobile 760 */
+@media screen and (max-width:759px){
+    
+}
