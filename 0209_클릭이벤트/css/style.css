@@ -1,0 +1,51 @@
+
+/* index.html 본문영역 */
+.main_visual { position:relative; }
+.main_visual img { width:100%; }
+.main_visual div { position:absolute; left:35%; top:100px; color:#fff; font-size:40px; line-height:2; text-align: center; }
+
+
+main { padding-top:140px; }
+main>section{ padding-bottom:160px; }
+
+.section_01 { text-align: center; }
+.section_01 ul { display: flex; justify-content: center; margin-bottom: 100px; }
+.section_01 li { width:30%; padding:50px; font-size:18px; font-weight: 300; line-height: 2; }
+.section_01 h3 { font-size: 32px;}
+.section_01 li:nth-child(1) h3 { color:#00838a; }
+.section_01 li:nth-child(2) h3 { color:#098ecc; }
+.section_01 li:nth-child(3) h3 { color:#00428e; }
+.about { padding: 60px; border-radius: 30px; box-shadow: 0 0 30px rgba(200,200,200,0.5); font-size:30px; font-weight: 300; line-height: 2; }
+.about span { color: #098ecc;}
+
+.section_02 { background:#f9f9f9; padding-top: 160px; }
+.section_02 h1 { height:100px; font-size:44px; font-weight: 900; text-align: center; }
+.section_02 ul { display: flex; justify-content: space-between; }
+.section_02 li { position:relative; width:32%; padding:40px; border-radius: 30px; box-shadow: 0 0 30px rgba(200,200,200,0.5); background: #fff; }
+.section_02 li:hover { background: #00428e; color: #fff; }
+.section_02 h3 { width: 80%; height:160px; font-size: 22px; }
+.day p { display: inline-block; font-weight:300; }
+.day p:first-child { margin-right: 20px; font-weight:500; }
+.more { position: absolute; right:40px; top:30px; font-size:36px; }
+
+.section_03 { padding-top: 160px; }
+.notice { display: flex; position:relative; border-top: 2px solid #222; padding-top: 30px; }
+.notice h3 { width:30%; font-size:40px; }
+.notice ul { width:70%; font-size:20px; font-weight: 300; }
+.notice li { display: flex; justify-content: space-between; line-height:80px; border-bottom: 1px solid #ddd; }
+.notice li:hover { font-weight:400; cursor: pointer; color:#00428e }
+.notice p { position:absolute; left:0; top:140px; font-size:16px; }
+.notice a { color:#098ecc; }
+
+
+
+
+
+/* 팝업광고 */
+.pop { display: none; position: fixed; left:50%; top:50%; transform: translate(-50%, -50%); width:650px; height: 480px; border-radius: 20px; border: 1px solid #222; background: #fff; overflow: hidden; z-index:10; }
+.pop p { position: absolute; right:20px; bottom:20px; padding:10px; cursor: pointer; }
+
+/* 전체상품 */
+.all { display: none; position: fixed; left: 0; top:0; width: 100%; height: 100vh; background: rgba(0,0,0,0.9); z-index: 10; }
+.all_etf { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); }
+.close { position: absolute; right:20px; top:20px; font-size:32px; cursor: pointer; }
