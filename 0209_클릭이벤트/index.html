@@ -188,4 +188,29 @@
 
     
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+   $(document).ready(function() {
+        // [ 닫기 ] 버튼 클릭 시 .pop 레이어 숨기기
+        $('.pop p').click(function(){
+            $('.pop').hide();
+        });
+
+        // (추가 팁) '전체상품 한눈에 보기' 클릭 시 .all 레이어 띄우기
+        $('.view').click(function(){
+            $('.all').slideDown(300);
+        });
+
+        // .all 레이어의 닫기(X) 버튼 클릭 시 숨기기
+        $('.all .close').click(function(){
+            $('.all').slideUp(300);
+        });
+        $('.search').click(function() {
+        $('.search_area').stop().fadeToggle(300); // 부드럽게 나타남
+    });
+        $('.search_area button').click(function() {
+        $('.search_area').stop().fadeToggle(300); // 부드럽게 나타남
+    });
+    });
+</script>
 </html>

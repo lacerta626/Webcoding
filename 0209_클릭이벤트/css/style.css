@@ -42,7 +42,7 @@ main>section{ padding-bottom:160px; }
 
 
 /* 팝업광고 */
-.pop { display: none; position: fixed; left:50%; top:50%; transform: translate(-50%, -50%); width:650px; height: 480px; border-radius: 20px; border: 1px solid #222; background: #fff; overflow: hidden; z-index:10; }
+.pop { display: block; position: fixed; left:50%; top:50%; transform: translate(-50%, -50%); width:650px; height: 480px; border-radius: 20px; border: 1px solid #222; background: #fff; overflow: hidden; z-index:10; }
 .pop p { position: absolute; right:20px; bottom:20px; padding:10px; cursor: pointer; }
 
 /* 전체상품 */
