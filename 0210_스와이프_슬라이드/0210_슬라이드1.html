@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 제이쿼리라이브러리 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper 슬라이드 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="s1">
+            <div class="inner">
+                <h2>기본 슬라이드 배너</h2>
+                <div class="slide_1">
+                    <!-- Slider main container -->
+                    <div class="swiper1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="images/01.jpg" alt="슬라이드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/02.jpg" alt="슬라이드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/03.jpg" alt="슬라이드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/04.jpg" alt="슬라이드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/05.jpg" alt="슬라이드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/06.jpg" alt="슬라이드">
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <!-- Slider main container -->
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="inner">
+                <h2>반응형 슬라이드 배너</h2>
+                <div class="slide_2">
+                    <!-- Slider main container -->
+                    <div class="swiper2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="images/bg1.jpg" alt="배너">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/bg2.jpg" alt="배너">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/bg3.jpg" alt="배너">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/bg4.jpg" alt="배너">
+                            </div>
+                        </div>
+                        
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <!-- Slider main container -->
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>

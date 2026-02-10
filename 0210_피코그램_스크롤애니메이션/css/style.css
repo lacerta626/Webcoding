@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family:Noto Sans KR, serif; font-size: 16px; color:#222; }
+li { list-style: none; }
+img { vertical-align: middle; }
+a { text-decoration: none; color:#222; }
+
+.inner { width: 1440px; margin: 0 auto; }
+
+header { position: absolute; left: 0; top:0; width: 100%; height: 100px; border-bottom: 1px solid rgba(255,255,255,0.3); z-index:1; } /* 1수준요소의 position기준은 윈도우기준 */
+nav { position: relative; }
+.logo { position: absolute; left:80px; top:20px; }
+.logo img { height: 60px; }
+.search { position: absolute; right:80px; top:40px; color:#fff; }
+/* 카테고리메뉴 */
+.gnb { display: flex; justify-content: center; }
+.gnb>li { width: 140px; height: 100px; text-align: center; display: flex; align-items: center; position: relative; } /* 세로 가운데배치 (padding-top, link-height, align-items) */
+.gnb a { font-size:18px; color: #fff; }
+/* 하위메뉴 */
+.gnb>li:hover .sub { display: block; }
+.sub { display: none; position: absolute; left:0; top:100px; background: rgba(255,255,255,0.6); width: 160px; font-size: 16px; text-align: left; padding: 20px; border-radius: 0 0 30px 30px; }
+.sub>li { height: 30px; letter-spacing: -1px; }
+
+.main_visual { position: relative; text-align: center; font-size:22px; line-height: 2; color:#fff; text-shadow: 0 0 10px #022349; }
+.main_visual video { width: 100%; }
+.over { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
+/* 기준위치 상위요소의 정중앙 */
+
+
+.title { font-size: 42px; font-weight: 900; margin-bottom:30px; }
+.s1 { padding:100px 0; }
+.s1 ul { display: flex; justify-content: space-between; text-align: center; }
+.s1 li { width: 31.5%; }
+.s1 li div:nth-child(1) { overflow: hidden; }
+.s1 li div:nth-child(1) img { transition:transform 1s; } /* 움직이는 대상 */
+.s1 li div:nth-child(1):hover img { transform: scale(1.2); }
+
+.s2 { padding: 100px 0; background: url(../source/bureal_bg.jpg) no-repeat center; text-align: center; color:#fff; }
+.s2>p>img { height:100px; }
+.s2>p { padding:25px 0; }
+.s2 ol { margin-top: 60px; display: flex; justify-content: center; }
+.s2 li { width: 200px; height: 200px; border-radius: 100px; background: rgba(255,255,255,0.2); padding-top:40px; }
+.s2 li div { padding-top:20px; }
+
+.s3 { padding: 160px 0; }
+.s3 .inner { display: flex; justify-content: space-between; }
+.left , .right { width: 48%; } /* 2단배열 */
+.left h3 { color:#9D1E34; }
+.left p { color: #555; margin-bottom: 100px; }
+/* .btn { display:inline-block; padding:10px 40px; border-radius: 100px; border:1px solid #222; transition:all 0.8s; }  */
+/* 버튼에 사이즈를 기재하면 block, inline-block 으로 설정 */
+.btn { display: block; width: 300px; height:56px; border:1px solid #222; padding-top:15px; text-align: center; transition:all 0.8s; }
+.btn:hover { background: #9D1E34; color: #fff; }
+.right { overflow: hidden; }
+.right img { width: 100%; transition: transform 0.8s; }
+.right:hover img { transform: scale(1.2); }
+
+
+/* footer { padding:50px 0; background: #222; color: #fff; font-weight: 300; }
+.f_logo { display:inline-block;  width:20%; vertical-align: top; }
+.f_logo img { width:150px; }
+.info { display:inline-block; width:70%; line-height: 2; }
+.info span { margin-right: 20px; }
+.info p:last-child { margin-top: 30px; } */
+footer { padding:50px 0; background: #222; color: #fff; font-weight: 300; }
+footer .inner { display: flex; justify-content: space-between; }
+.f_logo { width: 200px;  }
+.f_logo img { width:150px; }
+.info { width: 70%;  line-height: 2; }
+.info span { margin-right: 20px; }
+.info p:last-child { margin-top: 30px; }

@@ -1,0 +1,51 @@
+@import url(font.css);
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Pretendard', sans-serif; font-size: 16px; color:#333; }
+li { list-style: none; }
+img, input { vertical-align: middle; }
+a { text-decoration: none; }
+.inner { width:1132px; margin:0 auto; }
+
+
+
+
+
+header { height:120px; }
+nav { position:relative; display: flex; justify-content: space-between; z-index: 9; }
+.view { position:absolute; top:0; right:0; padding:7px 26px; border-radius: 0 0 40px 40px; font-size:0.9rem; font-weight:300; background:#00428e; color:#fff; }
+
+.logo { padding-top:50px; }
+.logo img { height: 40%;}
+
+/* 검색팝업 */
+.search { padding-top: 60px; cursor: pointer; }
+.search_area { display:none; position:absolute; right:0; top:100px; width:300px; padding:30px; border-radius:10px; border: 1px solid #ddd; background: #fff; text-align:center;}
+.search_area input { outline: none; width:160px; padding: 6px; color:#00428e; }
+.search_area button { padding:4px 16px; }
+
+/* gnb 네비게이션 메뉴 */
+.gnb { display: flex; justify-content: center; padding-top:60px; }
+.gnb a { color:#222; }
+.gnb a:hover { color: #098ecc; }
+/* 메인메뉴 */
+.gnb>li { margin: 0 30px; font-size: 18px; height:50px; position:relative; }
+.sub { display:none; position: absolute; left:-20px; top:50px; width:160px; background:#fff; border: 1px solid #ddd; z-index: 1; padding:16px; font-size:16px; line-height:2; }
+.gnb>li:hover .sub { display: block; }
+
+
+
+
+
+footer { padding:30px 0; background:#f9f9f9; }
+footer .inner { position: relative; }
+.site_menu li { display: inline-block; margin-right: 20px; font-size:16px; }
+.site_menu li a { color:#222; }
+.site_menu>div { padding:20px 0; line-height: 2; }
+.adress { font-size:16px; font-weight: 300; color:#999; }
+.copyright { font-size:13px; font-weight: 300; color:#999; }
+.company { position: absolute; left:0; top:20px; font-size:26px; font-weight: 700; color:#ccc; }
+.site_link { position:absolute; right:0; top:30px; }
+.site_link a { display: block; border: 1px solid #222; border-radius: 40px; padding: 10px 30px; color:#222; }
+

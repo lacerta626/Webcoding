@@ -1,0 +1,19 @@
+.inner{width: 1200px;margin: 0 auto;}
+section { padding:160px 0}
+h2{text-align: center; border-bottom: 1px solid #222;margin-bottom: 60px;}
+/* slide_1 css 적용 */
+.slide_1 .swiper-slide img{width: 100%;}
+.slide_1 {position: relative; overflow: hidden;}
+
+/* slide_2 css */
+.slide_2 {position: relative;overflow: hidden;}
+.slide_2 .swiper-slide img{width: 100%;}
+
+/* mideaquery responsive */
+@media screen and (max-width:1199px) {
+    .inner {width: cal( 100% - 120px );}
+}
+
+@media screen and (max-width:759px) {
+    .inner {width: cal( 100% - 120px );}
+}
